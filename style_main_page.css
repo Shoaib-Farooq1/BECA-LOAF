@@ -76,6 +76,7 @@ body {
   margin-bottom: 50px;
   color: white;
   align-text: center;
+  transition: transform 0.5s ease; /* add transition property */
 }
 
 #balaclavas h2:hover {
@@ -102,6 +103,7 @@ body {
 
 #balaclavas p:hover {
   font-weight: 900;
+  color: orange;
 }
 
 .image-container div {
