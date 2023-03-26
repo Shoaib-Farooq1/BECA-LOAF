@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: 'Favorit Light', sans-serif;
+}
+
+#shop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+#shop h1 {
+  font-size: 60px;
+  margin: 0;
+  color: white;
+}
+
+#shop img {
+  display: wrap;
+  width: 60px;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px; /* Add some padding to make space for the fixed navigation bar */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 2; /* add this */
+}
+
+.navbar.hidden {
+  opacity: 0; /* Set opacity to 0 to hide the navigation bar */
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 10px;
+  border: none;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#balaclavas {
+  text-align: center;
+  padding-top: 100px;
+}
+
+#balaclavas h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+  color: white;
+  align-text: center;
+}
+
+#balaclavas h2:hover {
+  font-style: italic;
+  transform: skewX(30deg);
+  color: orange;
+  filter: blur(0.475px);
+
+}
+
+
+#balaclavas p {
+  font-size: 20px;
+  color: white;
+  padding-left: 0px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#balaclavas p:hover {
+  font-weight: 900;
+}
+
+.image-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  margin: 10px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  transition: filter 0.5s ease;
+}
+
+.image-container img:hover {
+  filter: blur(4px);
+}
+
+@media screen and (max-width: 800px) {
+  .image-container div {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
